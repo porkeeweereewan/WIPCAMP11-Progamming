@@ -218,6 +218,7 @@ is divided into following sections:
             </and>
         </condition>
         <condition else="testng" property="testng.mode" value="mixed">
+            <istrue value="${junit+testng.available}"/>
         </condition>
         <condition else="" property="testng.debug.mode" value="-mixed">
             <istrue value="${junit+testng.available}"/>
